@@ -4,10 +4,9 @@
 For building and running application you'll need:
 - JDK 21 (at least)
 - Maven 3
+- Docker desktop
 
-Database is required because backend will throw error on booting if he wont be able to establish connection to database.
-
-To start a local development server run in bash:
-```bash
-mvn spring-boot:run
+To start a local development server i prepared a .bat script and you just have to run it from cmd as:
+```cmd
+run-app-clean.sh
 ```
