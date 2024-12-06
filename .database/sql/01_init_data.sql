@@ -9,6 +9,7 @@ INSERT INTO public.light (device_id, state, brightness) VALUES
 ((SELECT id FROM public.device WHERE name = 'Light3'), TRUE, 100);
 
 
+
 INSERT INTO public.device (name, type) VALUES
 ('Thermostat1', 'THERMOSTAT'),
 ('Thermostat2', 'THERMOSTAT'),
