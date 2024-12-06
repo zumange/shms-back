@@ -10,4 +10,5 @@ docker volume rm postgresql_pgdata
 
 docker-compose up -d
 
+cd ../../
 mvn spring-boot:run
