@@ -16,8 +16,8 @@ DROP TABLE IF EXISTS public.blinds CASCADE
 CREATE TABLE public.device
 (
     id bigserial NOT NULL,
-    name character varying(40) NOT NULL,
-    type character varying(20) NOT NULL,
+    name varchar(40) NOT NULL,
+    type varchar(20) NOT NULL,
     CONSTRAINT device_pkey PRIMARY KEY (id),
     CONSTRAINT unique_device_name UNIQUE (name)
 )
@@ -41,7 +41,7 @@ CREATE TABLE public.thermostat
 (
     device_id bigint NOT NULL,
     temperature double precision,
-    mode character varying(20),
+    mode varchar(20),
     CONSTRAINT thermostat_pkey PRIMARY KEY (device_id),
     CONSTRAINT thermostat_device_id_fkey FOREIGN KEY (device_id)
         REFERENCES public.device (id) MATCH SIMPLE
