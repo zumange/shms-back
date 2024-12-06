@@ -1,6 +1,4 @@
 @echo off
-git checkout main
-git pull
 
 docker-compose down
 
